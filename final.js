@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
     Highcharts.chart('sanky_container', {
 
         title: {
-            text: 'Graudate School to Companies'
+            text: 'Business School Graduates Flow'
         },
         accessibility: {
             point: {
