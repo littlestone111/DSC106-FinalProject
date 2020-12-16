@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title> DSC 106 Final Project</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Chaoran Li and Yang Li">
+        <link rel = 'stylesheet' href = 'style.css' />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&display=swap" rel="stylesheet">   
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+        <script src="https://code.highcharts.com/modules/item-series.js"></script>
+        <script src="https://code.highcharts.com/modules/sankey.js"></script>
+        <script src="final.js"></script>
+    </head>
+
+    <body onload="init()";>
+        <div>
+            <h1 id = 'Title'>VALUABLE BUSINESS SCHOOL FOR CONSULTING</h1>
+            <hr>
+        </div>
+        <div>
+            <p class = intro> Here we have our introduction</p>
+            <div id="parliament_container"></div>
+            <hr>
+        </div>
+        <div>
+            <section class='flex-school'>
+                <ul class= 'school-logos'>
+                    <li><a onclick='school_pie_draw("Wharton")'><img src='logo/Wharton.png' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("HBS")'><img src='logo/HBS.jpg' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("GSB")'><img src='logo/GSB.png' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("Kellogg")'><img src='logo/Kellogg.jpg' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("Booth")'><img src='logo/ChicagoBooth-businessschool.png' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("CBS")'><img src='logo/columbia_business school.jpg' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("Sloan")' ><img src='logo/sloan.jpg' style="width: 150px;"></a></li>
+                </ul>
+            </section>
+            <div class='school-pie'>
+                <div id="pie_container" ></div>
+                <hr>
+            </div>
+        </div>
+        <div>
+            <div id = 'sanky_container' style="width: 1000px;"></div>
+        </div>
+    </body>
+</html>

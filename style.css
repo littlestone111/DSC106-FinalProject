@@ -1,0 +1,32 @@
+#Title{
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+}
+ul, li {
+    display:inline;
+    text-align: center;
+}
+.intro{
+    text-align: center;
+}
+p{
+    font-family: 'Markazi Text', serif;
+}
+.flex-school{
+    display: table;
+    margin: 0 auto;
+}
+.school-logos{
+    min-width: 696px;
+	list-style: none;
+    padding-top: 20px;
+}
+li{
+    display: inline;
+    padding-right: 20px;
+}
+#sanky_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
