@@ -24,15 +24,17 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                         {name:"Bain",
                             y:457,
                             z:125,
-                            color:'red'
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:518,
-                            z:200
+                            z:200,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:765,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
                 'GSB': ['Stanford Graduate School of Business' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -40,15 +42,18 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:140,
-                            z:125
+                            z:125,
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:167,
-                            z:200
+                            z:200,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:254,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
                 'Kellogg': ['Kellogg School of Management' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -56,15 +61,18 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:450,
-                            z:200
+                            z:200,
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:327,
-                            z:125
+                            z:125,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:465,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
                 'Booth': ['Booth School of Business' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -72,15 +80,18 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:189,
-                            z:125
+                            z:125,
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:302,
-                            z:200
+                            z:200,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:434,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
                 'CBS': ['Columbia Business School' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -88,15 +99,18 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:167,
-                            z:125
+                            z:125,
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:260,
-                            z:200
+                            z:200,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:474,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
                 'Sloan': ['Sloan School of Management' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -104,15 +118,18 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:149,
-                            z:125
+                            z:125,
+                            color:'#F5B7B1'
                         },
                         {name:"BCG",
                             y:214,
-                            z:200
+                            z:200,
+                            color:'#76D7C4'
                         },
                         {name:'Mckinsey',
                             y:294,
-                            z: 275},
+                            z: 275,
+                            color:"#566573"},
                         ]}],
             };
 
@@ -213,34 +230,6 @@ document.addEventListener('DOMContentLoaded', function () {
             data: sanky_data,
             type: 'sankey',
             name: ''
-        }],
-        nodes: [{
-            id: "Wharton",
-            colorIndex: 0
-        },
-        {
-            id: 'HBS',
-            colorIndex: 1
-        },
-        {
-            id: 'GSB',
-            colorIndex: 2
-        },
-        {
-            id: 'Kellogg',
-            colorIndex: 3
-        },
-        {
-            id: 'Booth',
-            colorIndex: 4
-        },
-        {
-            id: 'CBS',
-            colorIndex: 5
-        },
-        {
-            id: 'Sloan',
-            colorIndex: 6
         }]
     
     });
