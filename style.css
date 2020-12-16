@@ -30,3 +30,28 @@ li{
     margin-left: auto;
     margin-right: auto;
 }
+
+.firm-flex{
+    display: flex;
+    align-content: space-between;
+}
+.firm-logo{
+    flex: 33.33%;
+    padding:20px;
+}
+
+#firm-barchart{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 80hw;
+}
+.center{
+    width:210px;
+    height:100px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     
         series: [{
-            name: 'Count',
+            name: 'Count (In Hundreds) ',
             keys: ['name', 'y', 'color', 'label', 'count'],
             data: [
                 ['Wharton Business School', 19, '#BE3075', 'Wharton'],
@@ -213,3 +213,72 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    Highcharts.chart('firm-barchart', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'The Distribution of the Business School Graduates in Top 3 Consulting Companies'
+        },
+        xAxis: {
+            categories: ['Mckinsey', 'Bain', 'BCG'],
+            title:{text:"Top 3 Consulting Companies"
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Business School Graduates'
+            }
+        },
+        tooltip: {
+            pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+            shared: false
+        },
+
+        plotOptions: {
+            column: {
+                stacking: 'percent'
+            },
+            series: {
+                pointWidth: 80
+            }
+        },
+        series: [{
+            name: "Wharton Business School",
+            data: [750,479, 653],
+            color:"#576675"
+        }, {
+            name: "Harvard Business School",
+            data: [765,457, 518],
+            color:"#869ca3"
+        },
+        {
+            name: "Standford Graduate School of Business",
+            data: [254,140, 167],
+            color:"#86b2b1"
+        },
+        {
+            name: "Kellogg School of Management",
+            data: [465,450, 327],
+            color:"#a0bfab"
+        },
+        {
+            name: "Booth School of Business",
+            data: [434,189, 302],
+            color:"#ddecc5"
+        },{
+            name: "Columbia Business School",
+            data: [474,167, 260],
+            color:"#f0e5b2"
+        },{
+            name: "Sloan School of Management",
+            data: [294,149,214],
+            color:"#f2bab8"
+        },
+
+    ]
+    });
+});
