@@ -3,15 +3,19 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
     zMin: 0,data: [
                     {name:"Bain",
                     y:479,
-                    z:125
+                    z:125,
+                    color:'#F5B7B1'
                     },
                     {name:"BCG",
                     y:653,
-                    z:200
+                    z:200,
+                    color:'#76D7C4'
                 },
                 {name:'Mckinsey',
                     y:750,
-                    z: 275},
+                    z: 275,
+                    color:"#566573"
+                },
                 ]}],
                 'HBS' : ['Harvard Business School' ,{minPointSize: 10,
                     innerSize: '20%',
@@ -19,7 +23,8 @@ var all_data = {'Wharton' :["Wharton Business School",{minPointSize: 10,
                     data: [
                         {name:"Bain",
                             y:457,
-                            z:125
+                            z:125,
+                            color:'red'
                         },
                         {name:"BCG",
                             y:518,
@@ -157,13 +162,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Count (In Hundreds) ',
             keys: ['name', 'y', 'color', 'label', 'count'],
             data: [
-                ['Wharton Business School', 19, '#BE3075', 'Wharton'],
-                ['Harvard Business School', 17, '#EB001F', 'HBS'],
-                ['Stanford Graduate School of Business', 5, '#64A12D', 'GSB'],
-                ['Kellogg School of Management', 12, '#FFED00', 'Kellogg'],
-                ['Booth School of Business', 12, '#000000', 'Booth'],
-                ['Columbia Business School', 9, '#008AC5', 'CBS'],
-                ['Sloan School of Management', 6, '#009EE0', 'Sloan']
+                ['Wharton Business School', 19, "#576675", 'Wharton'],
+                ['Harvard Business School', 17, "#869ca3", 'HBS'],
+                ['Stanford Graduate School of Business', 5, "#86b2b1", 'GSB'],
+                ['Kellogg School of Management', 12, "#a0bfab", 'Kellogg'],
+                ['Booth School of Business', 12, "#ddecc5", 'Booth'],
+                ['Columbia Business School', 9, "#f0e5b2", 'CBS'],
+                ['Sloan School of Management', 6, "#f2bab8", 'Sloan']
             ],
             dataLabels: {
                 enabled: true,
@@ -207,7 +212,35 @@ document.addEventListener('DOMContentLoaded', function () {
             keys: ['from', 'to', 'weight'],
             data: sanky_data,
             type: 'sankey',
-            name: 'Sankey demo series'
+            name: ''
+        }],
+        nodes: [{
+            id: "Wharton",
+            colorIndex: 0
+        },
+        {
+            id: 'HBS',
+            colorIndex: 1
+        },
+        {
+            id: 'GSB',
+            colorIndex: 2
+        },
+        {
+            id: 'Kellogg',
+            colorIndex: 3
+        },
+        {
+            id: 'Booth',
+            colorIndex: 4
+        },
+        {
+            id: 'CBS',
+            colorIndex: 5
+        },
+        {
+            id: 'Sloan',
+            colorIndex: 6
         }]
     
     });
