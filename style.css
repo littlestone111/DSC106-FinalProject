@@ -17,6 +17,13 @@ p{
 .intro{
     text-align: left;
     text-indent:2em;
+    margin-left: 50px;
+}
+.body-p{
+    text-align: left;
+    text-indent:2em;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 p.exl{
     padding-left: 10%;
@@ -75,4 +82,11 @@ footer{
     list-style: disc outside none;
     margin-left: 5em;
     text-align:left;
+}
+
+.flex-intro{
+    display: flex;
+}
+.intro_1{
+    width: 50vw;
 }

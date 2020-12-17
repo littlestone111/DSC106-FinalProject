@@ -12,6 +12,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        
+        
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
         <script src="https://code.highcharts.com/modules/item-series.js"></script>
@@ -26,44 +31,69 @@
             <hr>
         </div>
         <div>
-            <p class = "intro"> The project is planning to show the relationships between different top-tier business schools and top-tier consulting firms. We are trying to analyze the career paths of the students who graduated from top-tier business schools to top-tier consulting companies.
-
-                Our targeted audiences are recruiters of the consulting firms and candidates, who are interested in consulting and plan to pursue a master’s degree.
-                We've chosen 7 seven top business schools in the U.S., including:
-                </p>
-                <ul >
-                    <li class="listSchool">Wharton Business School at University of Pennsylvania</li>
-                    <li class="listSchool">Harvard Business School at Harvard University</li>
-                    <li class="listSchool">Standford Graduate School of Business at Stanford University</li>
-                    <li class="listSchool">Kellogg School of Management at Northwestern University</li>
-                    <li class="listSchool">Booth School of Business at University of Chicago</li>
-                    <li class="listSchool">Columbia Business School at Columbia University</li>
-                    <li class="listSchool">Sloan School of Management at Massachusetts Institute of  Technology(MIT)</li>
-                    
-                </ul>
-                <p class = "intro"> We've also chosen top 3 well-known consulting companies:
-                </p>
-                <ul >
-                    <li class="listSchool">McKinsey & Company (McKinsey)</li>
-                    <li class="listSchool">Boston Consulting Group (BCG)</li>
-                    <li class="listSchool">Bain & Company (Bain)</li>         
-                </ul>
-                <p class = "intro"> WWe're planning to demonstrate the distribution of the excellent business schools graduates in the top 3 consulting companies 
-                    and the distribution of the academic background of the current employees in the top 3 consulting companies using different charts.
-                   Let's navigate it!
-                </p>
+            
+            <div class = 'flex-intro'>
+                <div class='intro_1'>
+                    <p class = "intro"> This project shows the relationships between top-tier business schools and top-tier consulting firms. We have analyzed the current employment status of those graduates from top-tier business schools. We also investigated their distribution across top-tier consulting firms.
+                        <br><br>
+                        </p>
+                    <p class = 'intro'>
+                        For schools, we've chosen 7 seven top business schools in the U.S., including:
+                    </p>
+                    <ul >
+                        <li class="listSchool"> <a href='https://www.wharton.upenn.edu/' target="_blank">Wharton Business School at University of Pennsylvania</a></li>
+                        <li class="listSchool"><a href ='https://www.hbs.edu/Pages/default.aspx' target="_blank">Harvard Business School at Harvard University</a></li>
+                        <li class="listSchool"><a href ='https://www.gsb.stanford.edu/' target="_blank">Standford Graduate School of Business at Stanford University</a></li>
+                        <li class="listSchool"><a href ='https://www.kellogg.northwestern.edu/' target="_blank">Kellogg School of Management at Northwestern University</a></li>
+                        <li class="listSchool"><a href ='https://www.chicagobooth.edu/' target="_blank">Booth School of Business at University of Chicago</a></li>
+                        <li class="listSchool"><a href ='https://home.gsb.columbia.edu/' target="_blank">Columbia Business School at Columbia University</a></li>
+                        <li class="listSchool"><a href ='https://mitsloan.mit.edu/' target="_blank">Sloan School of Management at Massachusetts Institute of  Technology(MIT)</a></li>
+                        
+                    </ul>
+                    <p class = "intro"> We've also chosen 3 well-known consulting companies:
+                    </p>
+                    <ul >
+                        <li class="listSchool"><a href ='https://www.mckinsey.com/' target="_blank">McKinsey & Company (McKinsey)</a></li>
+                        <li class="listSchool"><a href ='https://www.bcg.com/en-us/' target="_blank">Boston Consulting Group (BCG)</a></li>
+                        <li class="listSchool"><a href ='https://www.bain.com/' target="_blank">Bain & Company (Bain)</a></li>         
+                    </ul>
+                    <p class = "intro"> 
+                        Through our visualization, we demonstrated the distribution of business school graduates who are currently working for the 3 consulting companies chosen. We have also shown different academic backgrounds may have a different chance of getting into those companies. <br> <br>Let's navigate through it!                            
+                    </p>
+                </div>
+                <div class='intro_2'>
+                    <img src = 'logo/People.jpg' style='width: 500px;margin-left: 100px;margin-top: 100px;'> 
+                </div>
             </div>
+        </div>
 
-<br>
-<hr>
-
+        <br>
+        <hr>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
             <div id="parliament_container"></div>
-            <hr>
-<p class = "intro">
+            <br>
+            <br>
+            <br>
+            
+            <p class = "body-p">
+                According to the parliament chart above, over 60% of data collected from the current employees at McKinsey, BCG, and Bain are from Wharton Business School, Harvard Business School, and Kellogg School of Management. Where Wharton Business School takes the lead with over 1900 business school graduates. It is very interesting to see the dataset is distributed in this way. Graduates from those schools probably have a higher chance to secure a position in those 3 companies.
+            </p>       
+            <br>
+            <br>
+            <br>
 
-</p>       
+        </div>
+            
+<hr>
         
         <div>
+            <br>
+            <br>
+            <br>
             <section class='flex-school'>
                 <ul class= 'school-logos'>
                     <li><a onclick='school_pie_draw("Wharton")'><img src='logo/Wharton.png' style="width: 150px;"></a></li>
@@ -76,10 +106,17 @@
                 </ul>
                 <br>
                 <br>
+                <br>
             </section>
             <div class='school-pie'>
                 <div id="pie_container" ></div>
+
+                <br>
+                <br>
+                <br>
+                
                 <hr>
+
             </div>
         
         </div>

@@ -139,7 +139,11 @@ function school_pie_draw(name){
             type: 'variablepie'
         },
         title: {
-            text: all_data[name][0]
+            text: all_data[name][0],
+            style:{
+                fontFamily: 'Libre Baskerville',
+                fontSize :25
+            }
         },
         tooltip: {
             headerFormat: '',
@@ -168,7 +172,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     
         title: {
-            text: 'Current Empolyee Data Distribution over Business School Graduates (In Hundreds)'
+            text: 'Current Empolyee Data Distribution over Business School Graduates (In Hundreds)',
+            style:{
+                fontFamily: 'Libre Baskerville',
+                fontSize :25
+            }
         },
 
         legend: {
@@ -183,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ['Harvard Business School', 17, "#5c87ab", 'HBS'],
                 ['Stanford Graduate School of Business', 5, "#629a88", 'Standford GSB'],
                 ['Kellogg School of Management', 12, "#bac97e", 'Kellogg'],
-                ['Booth School of Business', 12, "#f0e5b2", 'Booth'],
+                ['Booth School of Business', 9, "#f0e5b2", 'Booth'],
                 ['Columbia Business School', 9, "#e7c59a", 'CBS'],
                 ['Sloan School of Management', 6, "#bf7777", 'Sloan']
             ],
@@ -218,7 +226,11 @@ document.addEventListener('DOMContentLoaded', function () {
     Highcharts.chart('sanky_container', {
 
         title: {
-            text: 'Business School Graduates Flow'
+            text: 'Business School Graduates Flow',
+            style:{
+                fontFamily: 'Libre Baskerville',
+                fontSize :25
+            }
         },
         accessibility: {
             point: {
@@ -242,11 +254,16 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'column'
         },
         title: {
-            text: 'The Distribution of the Business School Graduates in Top 3 Consulting Companies'
+            text: 'The Distribution of the Business School Graduates in Top 3 Consulting Companies',
+            style:{
+                fontFamily: 'Libre Baskerville',
+                fontSize :25
+            }
         },
         xAxis: {
             categories: ['Mckinsey', 'Bain', 'BCG'],
-            title:{text:"Top 3 Consulting Companies"
+            title:{
+                text:"Top 3 Consulting Companies"
             }
         },
         yAxis: {
@@ -262,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         plotOptions: {
             column: {
-                stacking: 'percent'
+                stacking: 'number'
             },
             series: {
                 pointWidth: 80
