@@ -79,7 +79,6 @@ li{
 
 
 footer{
-    text-align: right;
     padding: 3px;
 }
 .listSchool{
@@ -94,4 +93,7 @@ footer{
 }
 .intro_1{
     width: 50vw;
+}
+.body-f{
+    text-align: center;
 }
