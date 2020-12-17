@@ -10,7 +10,16 @@ ul, li {
     text-align: center;
 }
 p{
-    font-family: 'Markazi Text', serif;
+    font-family: 'Lora', serif;
+    font-size:15px;
+    text-align: left;
+}
+.intro{
+    text-align: left;
+    text-indent:2em;
+}
+p.exl{
+    padding-left: 10%;
 }
 .flex-school{
     display: table;
@@ -57,3 +66,13 @@ li{
 }
 
 
+footer{
+    text-align: right;
+    padding: 3px;
+}
+.listSchool{
+    display: list-item; 
+    list-style: disc outside none;
+    margin-left: 5em;
+    text-align:left;
+}

@@ -10,7 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
         <script src="https://code.highcharts.com/modules/item-series.js"></script>
@@ -19,21 +20,55 @@
     </head>
 
     <body onload="init()";>
+        <br>
         <div>
             <h1 id = 'Title'>VALUABLE BUSINESS SCHOOL FOR CONSULTING</h1>
             <hr>
         </div>
         <div>
-            <p class = intro> Here we have our introduction1 temp</p>
+            <p class = "intro"> The project is planning to show the relationships between different top-tier business schools and top-tier consulting firms. We are trying to analyze the career paths of the students who graduated from top-tier business schools to top-tier consulting companies.
+
+                Our targeted audiences are recruiters of the consulting firms and candidates, who are interested in consulting and plan to pursue a master’s degree.
+                We've chosen 7 seven top business schools in the U.S., including:
+                </p>
+                <ul >
+                    <li class="listSchool">Wharton Business School at University of Pennsylvania</li>
+                    <li class="listSchool">Harvard Business School at Harvard University</li>
+                    <li class="listSchool">Standford Graduate School of Business at Stanford University</li>
+                    <li class="listSchool">Kellogg School of Management at Northwestern University</li>
+                    <li class="listSchool">Booth School of Business at University of Chicago</li>
+                    <li class="listSchool">Columbia Business School at Columbia University</li>
+                    <li class="listSchool">Sloan School of Management at Massachusetts Institute of  Technology(MIT)</li>
+                    
+                </ul>
+                <p class = "intro"> We've also chosen top 3 well-known consulting companies:
+                </p>
+                <ul >
+                    <li class="listSchool">McKinsey & Company (McKinsey)</li>
+                    <li class="listSchool">Boston Consulting Group (BCG)</li>
+                    <li class="listSchool">Bain & Company (Bain)</li>         
+                </ul>
+                <p class = "intro"> WWe're planning to demonstrate the distribution of the excellent business schools graduates in the top 3 consulting companies 
+                    and the distribution of the academic background of the current employees in the top 3 consulting companies using different charts.
+                   Let's navigate it!
+                </p>
+            </div>
+
+<br>
+<hr>
+
             <div id="parliament_container"></div>
             <hr>
-        </div>
+<p class = "intro">
+
+</p>       
+        
         <div>
             <section class='flex-school'>
                 <ul class= 'school-logos'>
                     <li><a onclick='school_pie_draw("Wharton")'><img src='logo/Wharton.png' style="width: 150px;"></a></li>
                     <li><a onclick='school_pie_draw("HBS")'><img src='logo/HBS.jpg' style="width: 150px;"></a></li>
-                    <li><a onclick='school_pie_draw("GSB")'><img src='logo/GSB.png' style="width: 150px;"></a></li>
+                    <li><a onclick='school_pie_draw("Standford GSB")'><img src='logo/GSB.png' style="width: 150px;"></a></li>
                     <li><a onclick='school_pie_draw("Kellogg")'><img src='logo/Kellogg.jpg' style="width: 150px;"></a></li>
                     <li><a onclick='school_pie_draw("Booth")'><img src='logo/ChicagoBooth-businessschool.png' style="width: 150px;"></a></li>
                     <li><a onclick='school_pie_draw("CBS")'><img src='logo/columbia_business school.jpg' style="width: 150px;"></a></li>
@@ -64,6 +99,8 @@
             <br><br>
             <div id = 'sanky_container' style="width: 1000px;"></div>
         </div>
-
+        <br>
+<footer>Authors: Yang Li (yal319@ucsd.edu) <br> Chaoran Li (chl051@ucsd.edu)</footer>
+<footer>Data Source: LinkedIn <br>Updated to Nov.11, 2020</foot>
     </body>
 </html>
