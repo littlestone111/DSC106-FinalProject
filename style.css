@@ -14,16 +14,21 @@ p{
     font-size:15px;
     text-align: left;
 }
+.note{
+    text-indent:2em;
+    text-align: right;
+    margin-right: 300px;
+}
 .intro{
     text-align: left;
     text-indent:2em;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .body-p{
     text-align: left;
     text-indent:2em;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 p.exl{
     padding-left: 10%;
